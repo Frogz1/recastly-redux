@@ -8,7 +8,8 @@
   "scripts": {
     "test": "live-server --open=./SpecRunner.html --port=8081",
     "start": "live-server",
-    "compile": "webpack -d --watch"
+    "compile": "webpack -d --watch",
+    "dev": "npm run-script compile && npm run-script start"
   },
   "dependencies": {
     "babel-core": "6.24.1",
@@ -17,6 +18,7 @@
     "bootstrap": "^4.0.0-alpha.2",
     "enzyme-redux": "^0.1.7",
     "jquery": "^2.2.1",
+    "live-server": "^1.2.0",
     "lodash": "^4.6.1",
     "popper.js": "^1.12.9",
     "react": "^15.6.1",
