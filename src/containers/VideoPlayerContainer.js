@@ -14,4 +14,4 @@ const mapStateToProps = (state) => {
 //dispatchers with your VideoPlayer component props.
 
 // export default VideoPlayerContainer;
-export default connect(mapStateToProps, mapDispatchToProps)(VideoPlayer);
+export default connect(mapStateToProps)(VideoPlayer);

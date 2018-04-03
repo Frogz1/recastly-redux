@@ -15,8 +15,6 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-var SearchContainer = () => {};
-
 
 
 export default connect(mapStateToProps, mapDispatchToProps)(Search);
