@@ -2,6 +2,7 @@ import React from 'react';
 import VideoListContainer from '../containers/VideoListContainer.js';
 import VideoPlayerContainer from '../containers/VideoPlayerContainer.js';
 import Nav from './Nav.js';
+import { Provider } from 'react-redux';
 import VideoPlayer from './VideoPlayer.js';
 import VideoList from './VideoList.js';
 import changeVideo from '../actions/currentVideo.js';
@@ -46,6 +47,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
+      <Provider store={}>
         <Nav handleSearchInputChange={this.getYouTubeVideos.bind(this)}/>
         <div className="row">
           <div className="col-md-7">
@@ -58,6 +60,7 @@ export default class App extends React.Component {
             />
           </div>
         </div>
+      </Provider>
       </div>
     );
   }

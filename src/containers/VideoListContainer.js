@@ -15,10 +15,6 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-var VideoListContainer = () => {
-   return connect(mapDispatchToProps)(VideoList)
-};
-// export default VideoListContainer;
 
 //TODO: define a VideoListContainer component which will hook up your action
 // dispatchers with your VideoList component props.
